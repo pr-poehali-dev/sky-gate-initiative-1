@@ -223,6 +223,65 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Diplomas Section */}
+      <section className="relative z-10 py-24 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="rounded-3xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-12">
+            <div className="text-center mb-16">
+              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance">Образование и квалификация</h2>
+              <p className="text-xl text-white/80 max-w-3xl mx-auto text-pretty">
+                Профессиональная подготовка подтверждена дипломами государственного образца.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                {
+                  url: "https://cdn.poehali.dev/files/158b4921-7868-457b-8c68-cb5eaf31cc9e.png",
+                  title: "Психоанализ",
+                  org: "Уральский федеральный университет",
+                  year: "2015–2019",
+                },
+                {
+                  url: "https://cdn.poehali.dev/files/8199a3bb-2ff8-4704-83e0-ac610ff48aa5.jpg",
+                  title: "Повышение квалификации",
+                  org: "Институт психотерапии им. Б.Д. Карвасарского",
+                  year: "2019",
+                },
+                {
+                  url: "https://cdn.poehali.dev/files/e8c6b077-723e-42e6-b378-ba6da757fe98.jpg",
+                  title: "Логопед-дефектолог",
+                  org: "АНО НИИДПО",
+                  year: "2019",
+                },
+                {
+                  url: "https://cdn.poehali.dev/files/7ba9dbb8-0d37-4a25-8306-2a15d9ab93c8.jpg",
+                  title: "Клинический психолог",
+                  org: "АНО НИИДПО",
+                  year: "2019",
+                },
+              ].map((diploma, i) => (
+                <div key={i} className="rounded-2xl overflow-hidden ring-1 ring-white/15 group cursor-pointer">
+                  <div className="relative overflow-hidden h-72">
+                    <img
+                      src={diploma.url}
+                      alt={diploma.title}
+                      className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                  </div>
+                  <div className="p-5 bg-black/20 backdrop-blur">
+                    <h3 className="font-semibold text-white mb-1">{diploma.title}</h3>
+                    <p className="text-white/60 text-sm">{diploma.org}</p>
+                    <p className="text-white/40 text-xs mt-1">{diploma.year}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="relative z-10 py-24 px-6">
         <div className="max-w-7xl mx-auto">
