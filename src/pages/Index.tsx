@@ -173,21 +173,13 @@ const Index = () => {
       {/* Features Section */}
       <section className="relative z-10 py-24 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="rounded-2xl bg-[#3d2820]/50 ring-1 ring-[#e8c4b0]/15 backdrop-blur p-8 text-center">
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-[#e8c4b0]/10 ring-1 ring-[#e8c4b0]/20 mb-6">
                 <Icon name="Brain" size={24} />
               </div>
               <h3 className="text-xl font-semibold mb-4">Клинический психолог</h3>
               <p className="text-white/80 leading-relaxed">Тревога, депрессия, кризисы, психосоматика — работаю системно и бережно.</p>
-            </div>
-
-            <div className="rounded-2xl bg-[#3d2820]/50 ring-1 ring-[#e8c4b0]/15 backdrop-blur p-8 text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-[#e8c4b0]/10 ring-1 ring-[#e8c4b0]/20 mb-6">
-                <Icon name="Baby" size={24} />
-              </div>
-              <h3 className="text-xl font-semibold mb-4">Логопед-дефектолог</h3>
-              <p className="text-white/80 leading-relaxed">Диагностика и коррекция речи у детей от 3 лет: задержки, дислексия, звукопроизношение.</p>
             </div>
 
             <div className="rounded-2xl bg-[#3d2820]/50 ring-1 ring-[#e8c4b0]/15 backdrop-blur p-8 text-center">
