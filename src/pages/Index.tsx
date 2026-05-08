@@ -120,6 +120,56 @@ const Index = () => {
         </div>
       </div>
 
+      {/* About Section */}
+      <section className="relative z-10 py-24 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="rounded-3xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              {/* Photo */}
+              <div className="flex justify-center">
+                <div className="relative">
+                  <img
+                    src="https://cdn.poehali.dev/projects/a31c1bb9-5d69-4d4e-a32a-318fb145b5e1/bucket/846f26fc-542e-41ba-b1d9-3e5a86c00d43.jpg"
+                    alt="Елена Виноградова"
+                    className="w-80 h-96 object-cover object-top rounded-3xl ring-1 ring-white/20"
+                  />
+                  <div className="absolute -bottom-4 -right-4 px-5 py-3 bg-white text-black rounded-2xl shadow-xl text-sm font-semibold">
+                    7+ лет практики
+                  </div>
+                </div>
+              </div>
+
+              {/* Text */}
+              <div className="space-y-6">
+                <div>
+                  <p className="text-white/60 text-sm uppercase tracking-widest mb-3">О специалисте</p>
+                  <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 text-balance">Елена Виноградова</h2>
+                </div>
+                <p className="text-white/80 text-lg leading-relaxed">
+                  Клинический психолог, логопед-дефектолог, психоаналитик. Работаю с детьми, взрослыми и семьями — очно в Санкт-Петербурге и онлайн по всему миру.
+                </p>
+                <p className="text-white/70 leading-relaxed">
+                  Моя задача — создать пространство, где можно говорить честно и без страха осуждения. Верю, что каждый человек способен на изменения, когда чувствует поддержку и понимание.
+                </p>
+                <div className="grid grid-cols-2 gap-4 pt-4">
+                  {[
+                    { label: "Психоанализ", sub: "УрФУ, 2019" },
+                    { label: "Клинический психолог", sub: "АНО НИИДПО, 2019" },
+                    { label: "Логопед-дефектолог", sub: "АНО НИИДПО, 2019" },
+                    { label: "Повышение квалификации", sub: "Институт психотерапии, 2019" },
+                  ].map((item, i) => (
+                    <div key={i} className="rounded-xl bg-white/5 ring-1 ring-white/10 p-4">
+                      <p className="text-white font-medium text-sm">{item.label}</p>
+                      <p className="text-white/50 text-xs mt-1">{item.sub}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Features Section */}
       <section className="relative z-10 py-24 px-6">
         <div className="max-w-7xl mx-auto">
