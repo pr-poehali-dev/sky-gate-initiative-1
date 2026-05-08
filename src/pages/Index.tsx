@@ -279,6 +279,48 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Pricing Section */}
+      <section className="relative z-10 py-24 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="rounded-3xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-12">
+            <div className="text-center mb-16">
+              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance">Стоимость</h2>
+              <p className="text-xl text-white/80 max-w-2xl mx-auto text-pretty">
+                Прозрачные условия без скрытых платежей.
+              </p>
+            </div>
+
+            <div className="max-w-sm mx-auto">
+              <div className="rounded-3xl bg-[#e8c4b0]/10 ring-2 ring-[#e8c4b0]/40 p-10 text-center">
+                <p className="text-[#e8c4b0] text-sm uppercase tracking-widest mb-4">Индивидуальная консультация</p>
+                <div className="text-7xl font-bold mb-2">2 000 ₽</div>
+                <p className="text-white/60 mb-8">60 минут · онлайн или очно</p>
+                <ul className="space-y-3 text-left mb-10">
+                  {[
+                    "Работа со взрослыми и подростками",
+                    "Очно в Екатеринбурге",
+                    "Онлайн — по всему миру",
+                    "Конфиденциально",
+                  ].map((item) => (
+                    <li key={item} className="flex items-center gap-3 text-white/80">
+                      <div className="w-5 h-5 rounded-full bg-[#e8c4b0]/20 ring-1 ring-[#e8c4b0]/40 flex items-center justify-center flex-shrink-0">
+                        <Icon name="Check" size={12} className="text-[#e8c4b0]" />
+                      </div>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <a href="https://t.me/+79089101320" target="_blank" rel="noopener noreferrer">
+                  <Button className="w-full bg-[#e8c4b0] text-[#2C1F1A] hover:bg-[#ddb49e] rounded-full py-4 text-base font-medium">
+                    Записаться
+                  </Button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Diplomas Section */}
       <section className="relative z-10 py-24 px-6">
         <div className="max-w-7xl mx-auto">
