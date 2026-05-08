@@ -93,7 +93,7 @@ const Index = () => {
 
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-white/90 max-w-4xl mb-12 leading-relaxed text-pretty">
-            Помогаю детям заговорить, взрослым — разобраться в себе, семьям — найти общий язык. Онлайн и очно в Санкт-Петербурге.
+            Помогаю взрослым и подросткам разобраться в себе, найти опору в кризисе и выстроить жизнь, которую хочется жить. Очно в Екатеринбурге и онлайн.
           </p>
 
           {/* CTA Buttons */}
@@ -146,7 +146,7 @@ const Index = () => {
                   <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 text-balance">Елена Виноградова</h2>
                 </div>
                 <p className="text-white/80 text-lg leading-relaxed">
-                  Клинический психолог, логопед-дефектолог, психоаналитик. Работаю с детьми, взрослыми и семьями — очно в Санкт-Петербурге и онлайн по всему миру.
+                  Клинический психолог, логопед-дефектолог, психоаналитик. Работаю со взрослыми и подростками — очно в Екатеринбурге и онлайн по всему миру.
                 </p>
                 <p className="text-white/70 leading-relaxed">
                   Моя задача — создать пространство, где можно говорить честно и без страха осуждения. Верю, что каждый человек способен на изменения, когда чувствует поддержку и понимание.
@@ -293,10 +293,34 @@ const Index = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
                 {
+                  url: "https://cdn.poehali.dev/projects/a31c1bb9-5d69-4d4e-a32a-318fb145b5e1/bucket/6f5138c8-2ab3-4608-b68e-f4b9167ff709.jpg",
+                  title: "Культурология",
+                  org: "УрГУ им. А.М. Горького, Екатеринбург",
+                  year: "2005",
+                },
+                {
                   url: "https://cdn.poehali.dev/files/158b4921-7868-457b-8c68-cb5eaf31cc9e.png",
                   title: "Психоанализ",
                   org: "Уральский федеральный университет",
                   year: "2015–2019",
+                },
+                {
+                  url: "https://cdn.poehali.dev/projects/a31c1bb9-5d69-4d4e-a32a-318fb145b5e1/bucket/c505d335-4832-4bd2-adb6-6a4c0eb7a5de.jpg",
+                  title: "Психоаналитическая работа с детьми",
+                  org: "Восточно-Европейский институт психоанализа",
+                  year: "2018",
+                },
+                {
+                  url: "https://cdn.poehali.dev/projects/a31c1bb9-5d69-4d4e-a32a-318fb145b5e1/bucket/932a630a-9287-48e0-a257-8006be7c7ef1.jpg",
+                  title: "Нейропсихологическая помощь",
+                  org: "АНО ДПО «ЦНПР»",
+                  year: "2018",
+                },
+                {
+                  url: "https://cdn.poehali.dev/projects/a31c1bb9-5d69-4d4e-a32a-318fb145b5e1/bucket/b72c891d-fd94-4ca3-9dd7-d1377c2e8258.jpg",
+                  title: "Нейропсихология детского возраста",
+                  org: "АНО НИИДПО",
+                  year: "2018",
                 },
                 {
                   url: "https://cdn.poehali.dev/files/8199a3bb-2ff8-4704-83e0-ac610ff48aa5.jpg",
@@ -438,33 +462,60 @@ const Index = () => {
               </div>
 
               {/* Right Column - Contact Info */}
-              <div className="space-y-8">
+              <div className="space-y-6">
                 <div>
                   <p className="text-xl text-white/90 leading-relaxed text-pretty">
-                    Напишите — и мы договоримся о времени, удобном для вас. Отвечаю в течение одного дня.
+                    Напишите или позвоните — и мы договоримся о времени, удобном для вас. Отвечаю в течение одного дня.
                   </p>
                 </div>
 
+                {/* Contact Buttons */}
+                <div className="space-y-3">
+                  <a href="tel:+79089101320" className="flex items-center gap-4 rounded-2xl bg-white/95 text-black p-5 shadow-lg hover:bg-white transition-colors">
+                    <div className="w-11 h-11 rounded-full bg-[#e8c4b0] flex items-center justify-center flex-shrink-0">
+                      <Icon name="Phone" size={20} />
+                    </div>
+                    <div>
+                      <p className="text-xs text-gray-500 mb-0.5">Позвонить</p>
+                      <p className="font-semibold text-lg">+7 908 910-13-20</p>
+                    </div>
+                  </a>
+
+                  <a href="https://wa.me/79089101320" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 rounded-2xl bg-white/95 text-black p-5 shadow-lg hover:bg-white transition-colors">
+                    <div className="w-11 h-11 rounded-full bg-[#25D366] flex items-center justify-center flex-shrink-0">
+                      <Icon name="MessageCircle" size={20} className="text-white" />
+                    </div>
+                    <div>
+                      <p className="text-xs text-gray-500 mb-0.5">Написать в WhatsApp</p>
+                      <p className="font-semibold text-lg">+7 908 910-13-20</p>
+                    </div>
+                  </a>
+
+                  <a href="https://t.me/+79089101320" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 rounded-2xl bg-white/95 text-black p-5 shadow-lg hover:bg-white transition-colors">
+                    <div className="w-11 h-11 rounded-full bg-[#229ED9] flex items-center justify-center flex-shrink-0">
+                      <Icon name="Send" size={20} className="text-white" />
+                    </div>
+                    <div>
+                      <p className="text-xs text-gray-500 mb-0.5">Написать в Telegram</p>
+                      <p className="font-semibold text-lg">+7 908 910-13-20</p>
+                    </div>
+                  </a>
+                </div>
+
                 {/* Profile Card */}
-                <div className="rounded-2xl bg-white/95 text-black p-6 shadow-2xl">
-                  <div className="flex items-center gap-4 mb-4">
+                <div className="rounded-2xl bg-white/95 text-black p-5 shadow-lg">
+                  <div className="flex items-center gap-4">
                     <img
                       src="https://cdn.poehali.dev/projects/a31c1bb9-5d69-4d4e-a32a-318fb145b5e1/bucket/846f26fc-542e-41ba-b1d9-3e5a86c00d43.jpg"
                       alt="Елена Виноградова"
-                      className="w-16 h-16 rounded-full object-cover object-top"
+                      className="w-14 h-14 rounded-full object-cover object-top flex-shrink-0"
                     />
                     <div>
-                      <h4 className="text-lg font-semibold">Елена Виноградова</h4>
-                      <p className="text-gray-600 text-sm">Клинический психолог · Логопед-дефектолог</p>
+                      <h4 className="font-semibold">Елена Виноградова</h4>
+                      <p className="text-gray-500 text-sm">Клинический психолог · Екатеринбург</p>
+                      <p className="text-gray-400 text-xs mt-0.5">Очно и онлайн · Взрослые и подростки</p>
                     </div>
                   </div>
-                  <p className="text-gray-700 text-sm leading-relaxed mb-4">
-                    Опыт работы более 7 лет. Диплом психоаналитика УрФУ, квалификации клинического психолога и логопеда-дефектолога (АНО НИИДПО).
-                  </p>
-                  <Button className="w-full bg-[#2C1F1A] text-[#e8c4b0] hover:bg-[#3d2820] rounded-lg py-2 text-sm flex items-center justify-center gap-2">
-                    <Mail className="w-4 h-4" />
-                    Написать напрямую
-                  </Button>
                 </div>
               </div>
             </div>
