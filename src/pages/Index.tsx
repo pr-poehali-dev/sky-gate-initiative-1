@@ -39,7 +39,7 @@ const Index = () => {
   ]
 
   return (
-    <div className="min-h-screen bg-[#0B0F12] text-white">
+    <div className="min-h-screen bg-[#2C1F1A] text-white">
       {/* Hero Section */}
       <div className="relative min-h-screen">
         {/* Background Image with Overlay */}
@@ -49,13 +49,13 @@ const Index = () => {
             backgroundImage: "url(https://cdn.poehali.dev/projects/a31c1bb9-5d69-4d4e-a32a-318fb145b5e1/files/fda2f0a7-acd7-43a2-98fc-315145997206.jpg)",
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/85" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#2C1F1A]/40 to-[#2C1F1A]/90" />
         </div>
 
         {/* Navigation */}
         <nav className="relative z-10 flex items-center justify-between p-6">
           {/* Logo */}
-          <div className="flex items-center gap-2 px-4 py-2 bg-black/40 ring-1 ring-white/20 backdrop-blur rounded-full">
+          <div className="flex items-center gap-2 px-4 py-2 bg-[#3d2820]/60 ring-1 ring-[#e8c4b0]/20 backdrop-blur rounded-full">
             <Icon name="Brain" size={18} />
             <span className="font-medium text-balance">Елена Виноградова</span>
           </div>
@@ -66,7 +66,7 @@ const Index = () => {
               <a
                 key={item}
                 href="#"
-                className="px-4 py-2 bg-black/40 ring-1 ring-white/20 backdrop-blur rounded-full hover:bg-black/50 transition-colors"
+                className="px-4 py-2 bg-[#3d2820]/60 ring-1 ring-[#e8c4b0]/20 backdrop-blur rounded-full hover:bg-[#3d2820]/80 transition-colors"
               >
                 {item}
               </a>
@@ -76,7 +76,7 @@ const Index = () => {
           {/* Action Button */}
           <div className="flex items-center gap-3">
             <a href="https://t.me/+79089101320" target="_blank" rel="noopener noreferrer">
-              <Button className="bg-white text-black hover:bg-white/90 rounded-full px-6">Записаться</Button>
+              <Button className="bg-[#e8c4b0] text-[#2C1F1A] hover:bg-[#ddb49e] rounded-full px-6 font-medium">Записаться</Button>
             </a>
           </div>
         </nav>
@@ -84,8 +84,8 @@ const Index = () => {
         {/* Hero Content */}
         <div className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-120px)] px-6 text-center">
           {/* Badge */}
-          <div className="mb-6 px-4 py-2 bg-black/40 ring-1 ring-white/20 backdrop-blur rounded-full">
-            <span className="text-sm font-medium">Клинический психолог · Логопед-дефектолог · Психоаналитик</span>
+          <div className="mb-6 px-4 py-2 bg-[#3d2820]/60 ring-1 ring-[#e8c4b0]/20 backdrop-blur rounded-full">
+            <span className="text-sm font-medium text-[#e8c4b0]">Клинический психолог · Логопед-дефектолог · Психоаналитик</span>
           </div>
 
           {/* Main Headline */}
@@ -99,21 +99,21 @@ const Index = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-16">
             <a href="https://t.me/+79089101320" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-white text-black hover:bg-white/90 rounded-full px-8 py-4 text-lg">
+              <Button size="lg" className="bg-[#e8c4b0] text-[#2C1F1A] hover:bg-[#ddb49e] rounded-full px-8 py-4 text-lg font-medium">
                 Записаться на консультацию
               </Button>
             </a>
             <Button
               size="lg"
               variant="outline"
-              className="bg-black/40 ring-1 ring-white/20 backdrop-blur border-0 text-white hover:bg-black/50 rounded-full px-8 py-4 text-lg"
+              className="bg-[#3d2820]/60 ring-1 ring-[#e8c4b0]/30 backdrop-blur border-0 text-white hover:bg-[#3d2820]/80 rounded-full px-8 py-4 text-lg"
             >
               Узнать об услугах
             </Button>
           </div>
 
           {/* Footer Note */}
-          <div className="flex items-center gap-2 px-4 py-2 bg-black/40 ring-1 ring-white/20 backdrop-blur rounded-full">
+          <div className="flex items-center gap-2 px-4 py-2 bg-[#3d2820]/60 ring-1 ring-[#e8c4b0]/20 backdrop-blur rounded-full">
             <Icon name="Shield" size={16} />
             <span className="text-sm font-medium">Конфиденциальность — моя профессиональная обязанность</span>
           </div>
@@ -174,32 +174,32 @@ const Index = () => {
       <section className="relative z-10 py-24 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
-            <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
+            <div className="rounded-2xl bg-[#3d2820]/50 ring-1 ring-[#e8c4b0]/15 backdrop-blur p-8 text-center">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-[#e8c4b0]/10 ring-1 ring-[#e8c4b0]/20 mb-6">
                 <Icon name="Brain" size={24} />
               </div>
               <h3 className="text-xl font-semibold mb-4">Клинический психолог</h3>
               <p className="text-white/80 leading-relaxed">Тревога, депрессия, кризисы, психосоматика — работаю системно и бережно.</p>
             </div>
 
-            <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
+            <div className="rounded-2xl bg-[#3d2820]/50 ring-1 ring-[#e8c4b0]/15 backdrop-blur p-8 text-center">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-[#e8c4b0]/10 ring-1 ring-[#e8c4b0]/20 mb-6">
                 <Icon name="Baby" size={24} />
               </div>
               <h3 className="text-xl font-semibold mb-4">Логопед-дефектолог</h3>
               <p className="text-white/80 leading-relaxed">Диагностика и коррекция речи у детей от 3 лет: задержки, дислексия, звукопроизношение.</p>
             </div>
 
-            <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
+            <div className="rounded-2xl bg-[#3d2820]/50 ring-1 ring-[#e8c4b0]/15 backdrop-blur p-8 text-center">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-[#e8c4b0]/10 ring-1 ring-[#e8c4b0]/20 mb-6">
                 <Icon name="Users" size={24} />
               </div>
               <h3 className="text-xl font-semibold mb-4">Семейный психолог</h3>
               <p className="text-white/80 leading-relaxed">Работаю с парами и семьями: конфликты, кризисы отношений, родительство.</p>
             </div>
 
-            <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
+            <div className="rounded-2xl bg-[#3d2820]/50 ring-1 ring-[#e8c4b0]/15 backdrop-blur p-8 text-center">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-[#e8c4b0]/10 ring-1 ring-[#e8c4b0]/20 mb-6">
                 <Icon name="Sparkles" size={24} />
               </div>
               <h3 className="text-xl font-semibold mb-4">Психоанализ</h3>
@@ -269,7 +269,7 @@ const Index = () => {
               <a href="https://t.me/+79089101320" target="_blank" rel="noopener noreferrer">
                 <Button
                   size="lg"
-                  className="bg-white text-black hover:bg-white/90 rounded-full px-12 py-4 text-lg font-semibold"
+                  className="bg-[#e8c4b0] text-[#2C1F1A] hover:bg-[#ddb49e] rounded-full px-12 py-4 text-lg font-medium"
                 >
                   Записаться на первую консультацию
                 </Button>
@@ -431,7 +431,7 @@ const Index = () => {
                       placeholder="Кратко опишите запрос — для ребёнка или для себя..."
                     />
                   </div>
-                  <Button className="w-full bg-black text-white hover:bg-gray-800 rounded-lg py-3 font-normal text-base">
+                  <Button className="w-full bg-[#2C1F1A] text-[#e8c4b0] hover:bg-[#3d2820] rounded-lg py-3 font-normal text-base">
                     Отправить заявку
                   </Button>
                 </form>
@@ -461,7 +461,7 @@ const Index = () => {
                   <p className="text-gray-700 text-sm leading-relaxed mb-4">
                     Опыт работы более 7 лет. Диплом психоаналитика УрФУ, квалификации клинического психолога и логопеда-дефектолога (АНО НИИДПО).
                   </p>
-                  <Button className="w-full bg-black text-white hover:bg-gray-800 rounded-lg py-2 text-sm flex items-center justify-center gap-2">
+                  <Button className="w-full bg-[#2C1F1A] text-[#e8c4b0] hover:bg-[#3d2820] rounded-lg py-2 text-sm flex items-center justify-center gap-2">
                     <Mail className="w-4 h-4" />
                     Написать напрямую
                   </Button>
@@ -542,7 +542,7 @@ const Index = () => {
                     placeholder="Ваш email"
                     className="flex-1 px-4 py-3 rounded-lg bg-white/5 ring-1 ring-white/20 backdrop-blur border-0 text-white placeholder:text-white/50 focus:ring-2 focus:ring-white/30 focus:outline-none"
                   />
-                  <Button className="bg-white text-black hover:bg-white/90 rounded-lg px-6 h-[50px]">Подписаться</Button>
+                  <Button className="bg-[#e8c4b0] text-[#2C1F1A] hover:bg-[#ddb49e] rounded-lg px-6 h-[50px]">Подписаться</Button>
                 </div>
               </div>
             </div>
