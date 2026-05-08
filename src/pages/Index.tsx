@@ -75,7 +75,9 @@ const Index = () => {
 
           {/* Action Button */}
           <div className="flex items-center gap-3">
-            <Button className="bg-white text-black hover:bg-white/90 rounded-full px-6">Записаться</Button>
+            <a href="https://t.me/+79089101320" target="_blank" rel="noopener noreferrer">
+              <Button className="bg-white text-black hover:bg-white/90 rounded-full px-6">Записаться</Button>
+            </a>
           </div>
         </nav>
 
@@ -96,9 +98,11 @@ const Index = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-16">
-            <Button size="lg" className="bg-white text-black hover:bg-white/90 rounded-full px-8 py-4 text-lg">
-              Записаться на консультацию
-            </Button>
+            <a href="https://t.me/+79089101320" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="bg-white text-black hover:bg-white/90 rounded-full px-8 py-4 text-lg">
+                Записаться на консультацию
+              </Button>
+            </a>
             <Button
               size="lg"
               variant="outline"
@@ -212,12 +216,14 @@ const Index = () => {
 
             {/* CTA Button */}
             <div className="text-center">
-              <Button
-                size="lg"
-                className="bg-white text-black hover:bg-white/90 rounded-full px-12 py-4 text-lg font-semibold"
-              >
-                Записаться на первую консультацию
-              </Button>
+              <a href="https://t.me/+79089101320" target="_blank" rel="noopener noreferrer">
+                <Button
+                  size="lg"
+                  className="bg-white text-black hover:bg-white/90 rounded-full px-12 py-4 text-lg font-semibold"
+                >
+                  Записаться на первую консультацию
+                </Button>
+              </a>
             </div>
           </div>
         </div>
