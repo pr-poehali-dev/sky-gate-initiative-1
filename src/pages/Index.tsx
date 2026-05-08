@@ -542,6 +542,16 @@ const Index = () => {
                       <p className="font-semibold text-lg">+7 908 910-13-20</p>
                     </div>
                   </a>
+
+                  <a href="https://m.vk.com/vinogradovapsiholog" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 rounded-2xl bg-white/95 text-black p-5 shadow-lg hover:bg-white transition-colors">
+                    <div className="w-11 h-11 rounded-full bg-[#0077FF] flex items-center justify-center flex-shrink-0">
+                      <Icon name="Users" size={20} className="text-white" />
+                    </div>
+                    <div>
+                      <p className="text-xs text-gray-500 mb-0.5">Я ВКонтакте</p>
+                      <p className="font-semibold text-lg">vinogradovapsiholog</p>
+                    </div>
+                  </a>
                 </div>
 
                 {/* Profile Card */}
@@ -577,9 +587,23 @@ const Index = () => {
                   <Icon name="Brain" size={24} />
                   <span className="text-xl font-semibold">Елена Виноградова</span>
                 </div>
-                <p className="text-white/80 leading-relaxed text-pretty">
-                  Клинический психолог, логопед-дефектолог и психоаналитик. Помогаю детям, взрослым и семьям находить опору, голос и себя.
+                <p className="text-white/80 leading-relaxed text-pretty mb-6">
+                  Клинический психолог, логопед-дефектолог и психоаналитик. Помогаю взрослым и подросткам находить опору и себя.
                 </p>
+                <div className="flex gap-3">
+                  <a href="https://m.vk.com/vinogradovapsiholog" target="_blank" rel="noopener noreferrer"
+                    className="w-10 h-10 rounded-full bg-[#0077FF] flex items-center justify-center hover:opacity-80 transition-opacity">
+                    <Icon name="Users" size={18} className="text-white" />
+                  </a>
+                  <a href="https://t.me/+79089101320" target="_blank" rel="noopener noreferrer"
+                    className="w-10 h-10 rounded-full bg-[#229ED9] flex items-center justify-center hover:opacity-80 transition-opacity">
+                    <Icon name="Send" size={18} className="text-white" />
+                  </a>
+                  <a href="https://wa.me/79089101320" target="_blank" rel="noopener noreferrer"
+                    className="w-10 h-10 rounded-full bg-[#25D366] flex items-center justify-center hover:opacity-80 transition-opacity">
+                    <Icon name="MessageCircle" size={18} className="text-white" />
+                  </a>
+                </div>
               </div>
 
               {/* Services Links */}
