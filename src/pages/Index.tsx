@@ -398,9 +398,11 @@ const Index = () => {
                 {/* Profile Card */}
                 <div className="rounded-2xl bg-white/95 text-black p-6 shadow-2xl">
                   <div className="flex items-center gap-4 mb-4">
-                    <div className="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center text-2xl font-bold text-gray-500">
-                      ЕВ
-                    </div>
+                    <img
+                      src="https://cdn.poehali.dev/projects/a31c1bb9-5d69-4d4e-a32a-318fb145b5e1/bucket/846f26fc-542e-41ba-b1d9-3e5a86c00d43.jpg"
+                      alt="Елена Виноградова"
+                      className="w-16 h-16 rounded-full object-cover object-top"
+                    />
                     <div>
                       <h4 className="text-lg font-semibold">Елена Виноградова</h4>
                       <p className="text-gray-600 text-sm">Клинический психолог · Логопед-дефектолог</p>
