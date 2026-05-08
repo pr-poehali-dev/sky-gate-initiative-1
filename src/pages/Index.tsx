@@ -24,7 +24,7 @@ const Index = () => {
     {
       question: "В каком формате проходят консультации?",
       answer:
-        "Я работаю как очно (Санкт-Петербург), так и онлайн по всему миру — в Zoom или Telegram. Для детских консультаций и диагностики предпочтителен очный формат, хотя часть встреч с родителями проходит онлайн.",
+        "Я работаю как очно (Екатеринбург), так и онлайн по всему миру — в Zoom или Telegram. Для детских консультаций и диагностики предпочтителен очный формат, хотя часть встреч с родителями проходит онлайн.",
     },
     {
       question: "Вы работаете с детьми или только со взрослыми?",
@@ -602,7 +602,7 @@ const Index = () => {
               <div>
                 <h3 className="text-sm font-bold uppercase tracking-wider mb-6">УСЛУГИ</h3>
                 <ul className="space-y-3">
-                  {["Психологическая консультация", "Логопедия для детей", "Семейная терапия", "Психоанализ"].map((item) => (
+                  {["Психологическая консультация", "Семейная терапия", "Психоанализ", "Кризисная помощь"].map((item) => (
                     <li key={item}>
                       <a href="#" className="text-white/70 hover:text-white transition-colors text-sm leading-relaxed">
                         {item}
@@ -630,7 +630,7 @@ const Index = () => {
               <div>
                 <h3 className="text-sm font-bold uppercase tracking-wider mb-6">КОНТАКТЫ</h3>
                 <ul className="space-y-3">
-                  {["Записаться онлайн", "Telegram", "Санкт-Петербург", "Вопросы и ответы"].map((item) => (
+                  {["Записаться онлайн", "Telegram", "Екатеринбург", "Вопросы и ответы"].map((item) => (
                     <li key={item}>
                       <a href="#" className="text-white/70 hover:text-white transition-colors text-sm leading-relaxed">
                         {item}
